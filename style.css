@@ -1,6 +1,6 @@
 .continent {
   display:grid;
-  grid-template-columns: repeat(5, 80px);
+  grid-template-columns: [asie] 80px [europe] 80px [afrique] 80px [amerique] 80px [oceanie] 80px;
   grid-auto-rows: 55px;
   justify-items: center;
   align-items: center;
@@ -8,21 +8,21 @@
 }
 
 [data-continent="asie"]{
-  grid-column-start: 1;
+  grid-column: asie;
 }
 
 [data-continent="europe"]{
-  grid-column-start: 2;
+  grid-column: europe;
 }
 
 [data-continent="afrique"]{
-  grid-column-start: 3;
+  grid-column: afrique;
 }
 
 [data-continent="amerique"]{
-  grid-column-start: 4;
+  grid-column: amerique;
 }
 
 [data-continent="oceanie"]{
-  grid-column-start: 5;
+  grid-column: oceanie;
 }
